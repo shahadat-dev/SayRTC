@@ -1,0 +1,11 @@
+{
+  "name": "SayRTC",
+  "version": "0.0.1",
+  "description": "SayRTC",
+  "dependencies": {
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "node-static": "0.7.7",
+    "socket.io": "1.2.0"
+  }
+}

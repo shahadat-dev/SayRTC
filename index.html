@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <title>SayRTC</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+  </head>
+
+  <body>
+    <div class="container">
+      <!--  user name prompt -->
+      <div class="input-block">
+        <input type="text" id="username" placeholder="User name please">
+      </div> 
+
+      <!--  message dashboard  -->
+      <div class="user-block">
+        <div id="self"></div>
+        <p class="heading"> Message Board </p>
+        <ul id="messages" class="mh-60"></ul>
+       <button id="sendButton">Call</button>
+       <button id="hangupButton">Hangup</button>
+       <div id="videos">
+          <video id="localVideo" autoplay muted></video>
+          <video id="remoteVideo" autoplay></video>
+      </div>
+      </div>
+
+      <!--  loggedin users block  -->
+      <div class="global-block">
+        <div class="chat-block">
+          <p class="heading"> Loggedin users </p>
+          <div id="users" class="mh-60">
+          </div>
+
+
+          <p class="heading"> Join user </p>
+          <input id="room" autocomplete="off" placeholder="username please "/>
+          <button id="joinRoomBtn">Join</button>
+          
+
+
+
+        </div>
+      </div>
+    </div>
+   
+
+    <script src="js/lib/socket.io-1.4.5.js"></script>
+    <script src="js/lib/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/lib/adapter.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
